@@ -1,0 +1,36 @@
+Environments:
+	Julia v1.0.3
+	python 3.6.7
+	PyTorch 1.0.0
+	CUDA 10.0
+	CuDNN 7.4.1
+
+
+
+
+#################### Linear Regression Simulations ####################
+julia *_sim.jl --n 100/250/500/1000 --p 128/256/512 --k 8/16/32 --type incoherent/nonincoherent --itm 10000
+
+julia stationary.jl --type incoherent/nonincoherent --itm 30000/1000
+
+
+
+
+#################### Input Structure Recovery ####################
+julia *_mlp.jl --> this execution yields .npy file which means input-hidden weight
+
+good/random initialization --> comment/uncomment W_0 parts
+
+
+
+
+#################### Network Sparsifications ####################
+Dataset: MNIST
+Dataset download code is included.
+Reviewers do not have to get dataset by themselves.
+
+
+Examples
+##### LeNet-300-100 Model #####
+h < L0-sep Reproduce
+python3 train_dense.py --batch_size 100 --max_epochs 122 --hidden 300 100 --alphas 245 75 25 --lambdas 0.0001 0.0001 0.0001 --eta 0.001 --tau 0.001 --bias False
