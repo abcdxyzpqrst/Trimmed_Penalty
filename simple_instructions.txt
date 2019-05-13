@@ -27,7 +27,7 @@ good/random initialization --> comment/uncomment W_0 parts
 #################### Network Sparsifications ####################
 Dataset: MNIST
 Dataset download code is included.
-Reviewers do not have to get dataset by themselves.
+One do not have to get dataset by themselves.
 
 
 Examples
