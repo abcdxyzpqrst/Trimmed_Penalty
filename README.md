@@ -20,3 +20,7 @@ If you think this repo is helpful, please cite as
   year={2019}
 }
 ```
+
+# Acknowledgement
+
+This work was supported by Institute of Information & Communications Technology Planning & Evaluation(IITP) grant funded by the Korea government (MSIT) (No.2019-0-01371, Development of brain-inspired AI with human-like intelligence)
